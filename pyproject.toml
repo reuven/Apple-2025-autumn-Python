@@ -1,0 +1,17 @@
+[project]
+name = "apple-2025-apple-autumn-python"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "jupyter-core>=5.9.1",
+    "marimo>=0.17.2",
+    "matplotlib>=3.10.7",
+    "notebook>=7.4.7",
+    "numpy>=2.3.4",
+    "pandas>=2.3.3",
+    "plotly>=6.3.1",
+    "pyarrow>=22.0.0",
+    "seaborn>=0.13.2",
+]
