@@ -5,6 +5,8 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
+    "gitautopush>=0.4.1",
+    "ipyparallel>=9.0.2",
     "jupyter-core>=5.9.1",
     "marimo>=0.17.2",
     "matplotlib>=3.10.7",

@@ -20,6 +20,8 @@ name = "apple-2025-apple-autumn-python"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "gitautopush" },
+    { name = "ipyparallel" },
     { name = "jupyter-core" },
     { name = "marimo" },
     { name = "matplotlib" },
@@ -33,6 +35,8 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
+    { name = "gitautopush", specifier = ">=0.4.1" },
+    { name = "ipyparallel", specifier = ">=9.0.2" },
     { name = "jupyter-core", specifier = ">=5.9.1" },
     { name = "marimo", specifier = ">=0.17.2" },
     { name = "matplotlib", specifier = ">=3.10.7" },
@@ -407,6 +411,15 @@ wheels = [
 ]
 
 [[package]]
+name = "gitautopush"
+version = "0.4.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/2c/06/2a77cdd141fd486a2a85fbe1d0e7f691083a3c9c6712076c9c42f7bff923/gitautopush-0.4.1.tar.gz", hash = "sha256:be961b4ffe692155e3451d8c902d245f1369b74303a04eb8f03712b02c88bc85", size = 4131, upload-time = "2019-09-24T17:05:58.206Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/77/3b/fef3184a145c7c27a000fb291ebb5dd4af4b905a753455f7227bea5d66e8/gitautopush-0.4.1-py3-none-any.whl", hash = "sha256:178c764f5baddf4571d605f959adf0f474076e377b6ae7517c5eb868ea87f9c1", size = 5480, upload-time = "2019-09-24T17:05:55.436Z" },
+]
+
+[[package]]
 name = "h11"
 version = "0.16.0"
 source = { registry = "https://pypi.org/simple" }
@@ -474,6 +487,27 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/b9/a4/4948be6eb88628505b83a1f2f40d90254cab66abf2043b3c40fa07dfce0f/ipykernel-7.1.0.tar.gz", hash = "sha256:58a3fc88533d5930c3546dc7eac66c6d288acde4f801e2001e65edc5dc9cf0db", size = 174579, upload-time = "2025-10-27T09:46:39.471Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/a3/17/20c2552266728ceba271967b87919664ecc0e33efca29c3efc6baf88c5f9/ipykernel-7.1.0-py3-none-any.whl", hash = "sha256:763b5ec6c5b7776f6a8d7ce09b267693b4e5ce75cb50ae696aaefb3c85e1ea4c", size = 117968, upload-time = "2025-10-27T09:46:37.805Z" },
+]
+
+[[package]]
+name = "ipyparallel"
+version = "9.0.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "decorator" },
+    { name = "ipykernel" },
+    { name = "ipython" },
+    { name = "jupyter-client" },
+    { name = "psutil" },
+    { name = "python-dateutil" },
+    { name = "pyzmq" },
+    { name = "tornado" },
+    { name = "tqdm" },
+    { name = "traitlets" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/53/79/7d003597f33eba737b3050f4bf91757355e34baf92c6fbc590bbac81d2b9/ipyparallel-9.0.2.tar.gz", hash = "sha256:d992edd698a99d45f2d9059af1c9ae8f086d1aeedb3e80436029a2f28d069f83", size = 4407304, upload-time = "2025-10-09T20:45:29.897Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/fe/60/03bcb17e62fefbdb5d0db8c4bfe6a00c5124a739eb8833d5d885f0c4c38e/ipyparallel-9.0.2-py3-none-any.whl", hash = "sha256:339cb837bdd1ed1c81deea066406954818107b359895b9654a2880560c7eff9f", size = 306788, upload-time = "2025-10-09T20:45:28.357Z" },
 ]
 
 [[package]]
@@ -1648,6 +1682,18 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/e8/59/593bd0f40f7355806bf6573b47b8c22f8e1374c9b6fd03114bd6b7a3dcfd/tornado-6.5.2-cp39-abi3-win32.whl", hash = "sha256:c6f29e94d9b37a95013bb669616352ddb82e3bfe8326fccee50583caebc8a5f0", size = 445023, upload-time = "2025-08-08T18:26:56.677Z" },
     { url = "https://files.pythonhosted.org/packages/c7/2a/f609b420c2f564a748a2d80ebfb2ee02a73ca80223af712fca591386cafb/tornado-6.5.2-cp39-abi3-win_amd64.whl", hash = "sha256:e56a5af51cc30dd2cae649429af65ca2f6571da29504a07995175df14c18f35f", size = 445427, upload-time = "2025-08-08T18:26:57.91Z" },
     { url = "https://files.pythonhosted.org/packages/5e/4f/e1f65e8f8c76d73658b33d33b81eed4322fb5085350e4328d5c956f0c8f9/tornado-6.5.2-cp39-abi3-win_arm64.whl", hash = "sha256:d6c33dc3672e3a1f3618eb63b7ef4683a7688e7b9e6e8f0d9aa5726360a004af", size = 444456, upload-time = "2025-08-08T18:26:59.207Z" },
+]
+
+[[package]]
+name = "tqdm"
+version = "4.67.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "colorama", marker = "sys_platform == 'win32'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/a8/4b/29b4ef32e036bb34e4ab51796dd745cdba7ed47ad142a9f4a1eb8e0c744d/tqdm-4.67.1.tar.gz", hash = "sha256:f8aef9c52c08c13a65f30ea34f4e5aac3fd1a34959879d7e59e63027286627f2", size = 169737, upload-time = "2024-11-24T20:12:22.481Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/d0/30/dc54f88dd4a2b5dc8a0279bdd7270e735851848b762aeb1c1184ed1f6b14/tqdm-4.67.1-py3-none-any.whl", hash = "sha256:26445eca388f82e72884e0d580d5464cd801a3ea01e63e5601bdff9ba6a48de2", size = 78540, upload-time = "2024-11-24T20:12:19.698Z" },
 ]
 
 [[package]]
